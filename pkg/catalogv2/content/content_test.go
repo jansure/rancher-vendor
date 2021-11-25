@@ -343,13 +343,13 @@ func TestFilteringReleases(t *testing.T) {
 }
 func TestFilteringReleaseKubeVersionAnnotation(t *testing.T) {
 	tests := []struct {
-		testName                    string
-		chartVersionAnnotation      string
-		rancherVersion              string
+		testName                   string
+		chartVersionAnnotation     string
+		rancherVersion             string
 		ChartKubeVersionAnnotation string
-		kubernetesVersion           string
-		skipFiltering               bool
-		expectedPass                bool
+		kubernetesVersion          string
+		skipFiltering              bool
+		expectedPass               bool
 	}{
 		{
 			"Index with chart that has no filters and skips filtering",
@@ -471,7 +471,7 @@ func TestFilteringReleaseKubeVersionAnnotation(t *testing.T) {
 								Version: "1.0.0",
 								Annotations: map[string]string{
 									"catalog.cattle.io/rancher-version": tt.chartVersionAnnotation,
-									"catalog.cattle.io/kube-version": tt.ChartKubeVersionAnnotation,
+									"catalog.cattle.io/kube-version":    tt.ChartKubeVersionAnnotation,
 								},
 							},
 							URLs:    nil,
@@ -491,7 +491,7 @@ func TestFilteringReleaseKubeVersionAnnotation(t *testing.T) {
 								Version: "1.0.0",
 								Annotations: map[string]string{
 									"catalog.cattle.io/rancher-version": tt.chartVersionAnnotation,
-									"catalog.cattle.io/kube-version": tt.ChartKubeVersionAnnotation,
+									"catalog.cattle.io/kube-version":    tt.ChartKubeVersionAnnotation,
 								},
 							},
 							URLs:    nil,

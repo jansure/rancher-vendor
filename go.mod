@@ -45,8 +45,8 @@ replace (
 )
 
 require (
-	github.com/Azure/azure-sdk-for-go v55.7.0+incompatible
-	github.com/Azure/go-autorest/autorest v0.11.19
+	github.com/Azure/azure-sdk-for-go v59.3.0+incompatible
+	github.com/Azure/go-autorest/autorest v0.11.22
 	github.com/Azure/go-autorest/autorest/adal v0.9.14
 	github.com/Azure/go-autorest/autorest/to v0.4.1-0.20210111195520-9fc88b15294e
 	github.com/BurntSushi/toml v0.4.1 // indirect
@@ -57,16 +57,16 @@ require (
 	github.com/bep/debounce v1.2.0
 	github.com/blang/semver v3.5.1+incompatible
 	github.com/coreos/go-iptables v0.6.0
-	github.com/coreos/go-oidc/v3 v3.0.0
+	github.com/coreos/go-oidc/v3 v3.1.0
 	github.com/coreos/go-semver v0.3.0
 	github.com/crewjam/saml v0.4.5
 	github.com/davecgh/go-spew v1.1.1
 	github.com/docker/distribution v2.7.1+incompatible
-	github.com/docker/docker v20.10.6+incompatible
+	github.com/docker/docker v20.10.11+incompatible
 	github.com/docker/go-connections v0.4.0
 	github.com/docker/libtrust v0.0.0-20160708172513-aabc10ec26b7 // indirect
 	github.com/ehazlett/simplelog v0.0.0-20200226020431-d374894e92a4
-	github.com/evanphx/json-patch v4.11.0+incompatible
+	github.com/evanphx/json-patch v5.6.0+incompatible
 	github.com/fatih/color v1.13.0 // indirect
 	github.com/garyburd/redigo v1.6.2 // indirect
 	github.com/ghodss/yaml v1.0.0
